@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<QUESTIONS>
+	<ANSWERS>
+		<ANSWER>0</ANSWER>
+		<EXPLANATION>Obvious answer isnt it?</EXPLANATION>
+		<WEIGHT>1</WEIGHT>
+	</ANSWERS>
+	<ANSWERS>
+		<ANSWER>1</ANSWER>
+		<EXPLANATION>Like everything else in life</EXPLANATION>
+		<WEIGHT>1</WEIGHT>
+	</ANSWERS>
+	<ANSWERS>
+		<ANSWER>1</ANSWER>
+		<EXPLANATION>If you filter out all the garbage it might be possible</EXPLANATION>
+		<WEIGHT>1</WEIGHT>
+	</ANSWERS>
+	<ANSWERS>
+		<ANSWER>3</ANSWER>
+		<EXPLANATION>Hey, dont blame me if you didnt get it right</EXPLANATION>
+		<WEIGHT>1</WEIGHT>
+	</ANSWERS>
+</QUESTIONS>

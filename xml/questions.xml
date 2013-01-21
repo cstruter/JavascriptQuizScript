@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<QUESTIONS>
+	<ANSWERS>
+		<QUESTION>Why did the chicken cross the road?</QUESTION>
+		<ANSWER>To get on the other side</ANSWER>
+		<ANSWER>To mark the area where the bomb is gonna fall</ANSWER>
+		<ANSWER>Because he left a dropping on it and made it angry</ANSWER>
+	</ANSWERS>
+	<ANSWERS>
+		<QUESTION>Why was civilization invented?</QUESTION>
+		<ANSWER>Seemed like a good idea at the time</ANSWER>
+		<ANSWER>To impress the opposite sex</ANSWER>
+		<ANSWER>HA! You call this civilization?</ANSWER>
+		<ANSWER>We needed somebody to blame</ANSWER>
+	</ANSWERS>
+	<ANSWERS>
+		<QUESTION>Can you fit the internet on one stiffy?</QUESTION>
+		<ANSWER>Yes</ANSWER>
+		<ANSWER>No</ANSWER>
+	</ANSWERS>
+	<ANSWERS>
+		<QUESTION>What is Javascript?</QUESTION>
+		<ANSWER>an action when you drop something you wrote in your coffee</ANSWER>
+		<ANSWER>A Play about coffee</ANSWER>
+		<ANSWER>A Play written using coffee</ANSWER>
+		<ANSWER>an object-oriented scripting language commonly used in websites.</ANSWER>
+	</ANSWERS>
+</QUESTIONS>

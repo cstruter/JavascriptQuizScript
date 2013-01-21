@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>Simple Javascript Quiz</title>
+		<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+		<script language="javascript" src="js/quiz.js"></script>
+		<script language="javascript" src="js/questions.js"></script>
+		<link rel="stylesheet" type="text/css" href="style/style.css" />		
+	</head>
+	<body>
+		<div style="padding:3px;background-color:black;color:red;width:500px">
+		Note regarding Chrome & Opera<br/>
+		You need to run this script via a webserver, running this script directly <i>(without a webserver)</i>, will result in the
+		following exception: Cross origin requests are only supported for HTTP.
+		</div>
+		<br/>
+		<div id="layer">
+			<table class="Question">
+				<tr>
+					<td>(::Question::)</td>
+				</tr>
+				<tr>
+					<td>
+						(::Answers::)
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="PagingTemplate">
+	        <table class="PagingTable">
+	            <tr class="styl5">
+	                <td align="center" width="90%">
+	                    <p class="styl1" align="center">
+	                        (::TotalPages::) Pages / Page <span id="CurrentPage">0</span> / (::TotalQuestions::) Questions</td>
+	                <td width="10%" align="left">
+	                    <input type="image" id="back" src="images/back.gif" onclick="Back()" />
+	                    <input type="image" id="next" src="images/next.gif" onclick="Next()" />
+	                </td>
+	            </tr>
+	        </table>
+		</div>
+		<div id="calculate">
+		<input type="button" value="calculate" onclick="checkanswers()" />
+		</div>
+	</body>
+</html>

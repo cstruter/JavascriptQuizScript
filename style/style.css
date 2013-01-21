@@ -1,0 +1,20 @@
+.Question
+{
+	border: 1px black solid;
+	width:500px;
+}
+
+.correct
+{
+	background-color:green;
+}
+
+.false
+{
+	background-color:red;
+}
+
+.results
+{
+	font-weight: bold;
+}

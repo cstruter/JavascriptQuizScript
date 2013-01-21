@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>
+</title>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body>
+
+<div class="header">
+<div class="title">CS Trüter</div>
+<div class="scriptName">Simple Javascript Questionnaire Documentation</div>
+<div class="version">version 1.1</div>
+</div><br/>
+
+<div class="body">
+
+<b>Code Description</b><br/><br/>
+
+The questionnaire page contains three div tags, named layer, PagingTemplate and calculate
+you will need these three divs as bases of the template.<br/><br/>
+
+Inside the layer template you'll find two tags, (::Question::) and (::Answers::), you can
+position these tags as you see fit within the div. Question containing the question that will
+be displayed and answers the answers.<br/><br/>
+
+The PagingTemplate div contains a (::TotalPages::) tag and a (::TotalQuestions::) tag which
+displays the number of pages and questions respectively.<br/><br/>
+
+The calculate div is invisible and only get displayed once the visitor reaches the last page 
+of questions, you simply need to attach an event to whichever object you want to trigger 
+the calculation of results entered, this event needs to call the checkanswers function.<br/><br/>
+
+The page that does the actual calculation only contains one div called results, styles can be
+altered using the style.css page.<br/><br/>
+
+<b>Adding Questions</b><br/><br/>
+
+questions.xml
+<div class="code">
+<xmp><QUESTIONS>
+	<ANSWERS>
+		<QUESTION>Whaaa?</QUESTION>
+		<ANSWER>dah</ANSWER>
+		<ANSWER>nah</ANSWER>
+	</ANSWERS>
+</QUESTIONS></xmp>
+</div>
+
+Adding new questions are extremely easy, simply edit questions.xml, note the 
+schema, each set of answer tags will generate a possible answer.<br/><br/>
+
+answers.xml
+<div class="code">
+<xmp><QUESTIONS>
+	<ANSWERS>
+		<ANSWER>0</ANSWER>
+		<EXPLANATION>Because</EXPLANATION>
+	</ANSWERS>
+</QUESTIONS></xmp>
+</div>
+
+You'll need to edit answers.xml as well to tell the script what the answers
+to the questions are ;).<br/><br/>
+
+The answers need to be in the same node position as in the questions.xml, the
+explanation node contents get displayed when an user entered the wrong answer to
+a question.<br/><br/>
+
+
+</div>
+<div class="footer">
+&copy; 2006 CS Trüter <a href="http://www.cstruter.com">www.cstruter.com</a>
+</div>
+</body>
+
+</html>
