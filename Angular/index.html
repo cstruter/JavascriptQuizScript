@@ -1,0 +1,31 @@
+<!doctype html>
+<html ng-app="myApp">
+	<head>
+		<script type="text/javascript" src="js/angular.min.js"></script>
+		<script type="text/javascript" src="js/custom-filters.js"></script>
+		<script type="text/javascript" src="js/QuestionController.js"></script>
+		<script type="text/javascript" src="js/DummyData.js"></script>
+	</head>
+	<body>
+		<div ng-controller="QuestionController">			
+			<div ng-repeat="Question in Questions | paging:3">
+				<div>{{Question.Question}}</div>
+				<div>
+					<div ng-repeat="Answer in Question.Answers">
+						<input type="radio" name="Answer{{$parent.$index}}" value="{{$index}}" ng-model="Question.Selected" />			
+						<span>{{Answer}}</span>
+						<br/>
+					</div>
+				</div>
+			</div>
+			<br/>
+			<button ng-disabled="Questions.paging.isMinPage()" ng-click="Questions.paging.back()">
+				Previous
+			</button>
+			<button ng-disabled="Questions.paging.isMaxPage()" ng-click="Questions.paging.next()">
+				Next
+			</button>
+			<button ng-click="CheckAnswers()">Check Answers</button>			
+		</div>
+	</body>
+</html>

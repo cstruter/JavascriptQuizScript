@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+	<head>
+		<script type="text/javascript" src="js/knockout-2.2.1.js"></script>
+		<script type="text/javascript" src="js/custom-extenders.js"></script>
+		<script type="text/javascript" src="js/DummyData.js"></script>		
+	</head>
+	<body>
+		<div>
+			<div data-bind="foreach: Questions.pagedData">
+				<div data-bind="text: Question"></div>
+				<div>
+					<div data-bind="foreach: Answers">						
+						<input type="radio" data-bind="attr: { name: 'Answer[' + $parentContext.$index() + ']', value: $index() }, checked: $parent.Selected" />
+						<span data-bind="text: $data"></span>
+						<br/>
+					</div>
+				</div>
+			</div>
+			<br/>
+			<button data-bind="click: Questions.back, attr: { disabled: Questions.isMinPage()}">
+				Previous
+			</button>
+			<button data-bind="click: Questions.next, attr: { disabled: Questions.isMaxPage()}">
+				Next
+			</button>			
+			<button data-bind="click: CheckAnswers">Check Answers</button>
+		</div>
+		<script type="text/javascript" src="js/QuestionViewModel.js"></script>
+	</body>
+</html>
